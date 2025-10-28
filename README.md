@@ -100,6 +100,8 @@ python examples.py
 ## 📚 Documentation
 
 - **[Pattern Cheat Sheet](#-table-of-contents)** - Quick reference (below)
+- **[COMPLEXITY_CHART.md](COMPLEXITY_CHART.md)** - Comprehensive complexity analysis for all algorithms
+- **[QUICK_REFERENCE.md](QUICK_REFERENCE.md)** - Printable interview reference card
 - **[CONTRIBUTING.md](CONTRIBUTING.md)** - How to contribute
 - **[STUDY_GUIDE.md](STUDY_GUIDE.md)** - 8-week study plan with tips
 
@@ -499,6 +501,8 @@ for u, v in edges:
 
 ## 13. Common Complexities Reference
 
+### Quick Complexity Overview
+
 | Operation / Pattern | Time Complexity | Space |
 | ------------------- | --------------- | ----- |
 | Single Loop         | O(n)            | O(1)  |
@@ -509,6 +513,34 @@ for u, v in edges:
 | Dynamic Programming | O(n) – O(n²)    | O(n)  |
 | Backtracking        | O(2ⁿ)           | O(n)  |
 | Matrix Traversal    | O(m × n)        | O(1)  |
+
+### Complexity Growth Visualization
+
+```
+Operations as input size (n) grows:
+
+O(1)        ▁               Constant - Best!
+O(log n)    ▁▂              Logarithmic - Excellent
+O(n)        ▁▂▃▄            Linear - Good
+O(n log n)  ▁▂▃▄▅▆          Linearithmic - Acceptable
+O(n²)       ▁▂▃▄▅▆▇█        Quadratic - Use for small n
+O(2ⁿ)       ▁▃▅▇███████     Exponential - Only tiny n
+O(n!)       ▁▇█████████     Factorial - Very tiny n only
+```
+
+### Input Size Limits
+
+| If n ≤     | Max Complexity | Example                    |
+|------------|----------------|----------------------------|
+| 10         | O(n!)          | Generate all permutations  |
+| 20         | O(2ⁿ)          | Subsets, backtracking      |
+| 500        | O(n³)          | Floyd-Warshall             |
+| 10⁴        | O(n²)          | Bubble sort, nested loops  |
+| 10⁶        | O(n log n)     | Merge sort, efficient sort |
+| 10⁸        | O(n)           | Single pass, hash map      |
+| 10⁹+       | O(log n)       | Binary search only         |
+
+**💡 See [COMPLEXITY_CHART.md](COMPLEXITY_CHART.md) for detailed analysis of every algorithm!**
 
 ---
 
