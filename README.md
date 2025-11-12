@@ -1,5 +1,7 @@
 # 🧠 Algorithm Code Patterns & Implementations
 
+**Status**: Comprehensive technical interview preparation resource with 700+ implementations - actively maintained study guide for algorithm mastery.
+
 A comprehensive repository to help you **master algorithm patterns**, **build intuition**, and **ace technical interviews**.  
 Includes pattern reference guide, Python implementations, tests, and study resources.
 
